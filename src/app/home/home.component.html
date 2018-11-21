@@ -1,0 +1,8 @@
+<p>
+  to do list
+</p>
+<ul class="items">
+  <li (click)=onSelect(todos) [class.selected]="isSelected(todos)" *ngFor="let todos of todo">
+    <span class="badge">{{todos.id}} {{todos.description}}</span>
+  </li>
+</ul>

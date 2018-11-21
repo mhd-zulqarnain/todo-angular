@@ -1,0 +1,12 @@
+.active{
+  color: black;
+  background: #9d9d9d;
+}
+a{
+  text-decoration: none;
+  background: #B7B7B7;
+  margin: 5px;
+  border: 1px solid #b7b7b7;
+  padding: 3px;
+  font-size: 25px;
+}
