@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule , routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoDetialsComponent } from './todo-detials/todo-detials.component';
+import {environment} from '../environments/environment.prod';
+import {AngularFireModule} from 'angularfire2'
+import {AngularFirestore} from 'angularfire2/firestore'
+import {AngularFireAuthModule} from 'angularfire2/auth';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,6 +15,10 @@ import { TodoDetialsComponent } from './todo-detials/todo-detials.component';
     routingComponents,
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule,
+    AngularFireAuthModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],
