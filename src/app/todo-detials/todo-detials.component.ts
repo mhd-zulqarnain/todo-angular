@@ -34,6 +34,8 @@ export class TodoDetialsComponent implements OnInit {
    this.db.list('/books').valueChanges().subscribe(books => {
       this.books = books;
 
+
+
     });
 
   }

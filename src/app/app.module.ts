@@ -9,7 +9,7 @@ import {AngularFireAuthModule} from 'angularfire2/auth';
 import { ReactiveFormsModule } from '@angular/forms';
 import {AngularFireModule} from 'angularfire2'
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { FirebaseService } from '/sr'
+import {FirebaseService} from './services/firebase.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { FirebaseService } from '/sr'
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
