@@ -1,3 +1,6 @@
+
+<div class="row offset-2">
+
 <h1>Login</h1>
 <div class="container">
   <div class="row">
@@ -7,7 +10,7 @@
           <label>Email</label>
           <input type="email" #refName formControlName="email" class="form-control" >
           <div  *ngIf="loginForm.controls['email'].hasError('required')" class="alert alert-danger">
-            Please Enter valid name
+            this field could not be empty
           </div>
 
         </div>
@@ -23,4 +26,5 @@
     </div>
 
   </div>
+</div>
 </div>
